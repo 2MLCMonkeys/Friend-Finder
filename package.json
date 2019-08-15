@@ -1,0 +1,24 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "Friend finder survery",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2MLCMonkeys/Friend-Finder.git"
+  },
+  "author": "2mlcmonkeys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2MLCMonkeys/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/2MLCMonkeys/Friend-Finder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
