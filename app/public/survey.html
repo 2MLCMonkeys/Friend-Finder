@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <style>
+    body{
+        background-color: cadetblue;
+    }
+    </style>
+
+    <title>Friend Finder</title>
+</head>
+
+<body>
+    <div class="container mt-4 mb-4">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Friend Finder!</h1>
+            <p class="lead">Please answer questions below to the best of your ability</p>
+            <hr class="my-4">
+            <p>One a scale of 1 to 5 either agree or strongly disagree with the question being asked. 1 being agree and 5 being strongly disgaree.</p>
+            <a class="btn btn-primary btn-lg" href="/home" role="button">Home</a>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Reset</a>
+        </div>
+<form id="new-friend">
+        <!--USER INPUTS-->
+        <div class="card mb-4">
+            <div class="card-header text-center">
+                <h3>Please Fill Out Form Below</h3>
+            </div>
+            <div class="card-body text-center">
+                    <form>
+                            <div class="form-group">
+                              <label for="formGroupExampleInput">Name: </label>
+                              <input type="text" class="form-control" id="user-name" placeholder="Rabid Lamebrains">
+                            </div>
+                            <div class="form-group">
+                              <label for="formGroupExampleInput2">URL link to Selfie</label>
+                              <input type="text" class="form-control" id="user-image" placeholder="Picture Link Here">
+                            </div>
+                          </form>
+            </div>
+        </div>
+
+
+        <!-- QUESTION ONE-->
+        <div class="card mb-4">
+            <div class="card-header text-center">
+                <h3>Having children is apart of your future aspirations? Or you already have children?</h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="1A" autocomplete="off" value="1"><span
+                            style="padding: 20pt; font-size: 15pt;">1</span">
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="1B" autocomplete="off" value="2"><span
+                            style="padding: 20pt; font-size: 15pt;">2</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="1C" autocomplete="off" value="3"><span
+                            style="padding: 20pt; font-size: 15pt;">3</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="1D" autocomplete="off" value="4"><span
+                            style="padding: 20pt; font-size: 15pt;">4</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="1E" autocomplete="off" value="5"><span
+                            style="padding: 20pt; font-size: 15pt;">5</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- QUESTION TWO-->
+        <div class="card mb-4">
+            <div class="card-header text-center">
+                <h3>Netflix, pizza, and your dog is more your speed than bar hopping?</h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="2A" autocomplete="off" value="1"><span
+                            style="padding: 20pt; font-size: 15pt;">1</span">
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="2B" autocomplete="off" value="2"><span
+                            style="padding: 20pt; font-size: 15pt;">2</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="2C" autocomplete="off" value="3"><span
+                            style="padding: 20pt; font-size: 15pt;">3</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="2D" autocomplete="off" value="4"><span
+                            style="padding: 20pt; font-size: 15pt;">4</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="2E" autocomplete="off" value="5"><span
+                            style="padding: 20pt; font-size: 15pt;">5</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- QUESTION THREE -->
+        <div class="card mb-4">
+            <div class="card-header text-center">
+                <h3>You support adopting pets from shelters versus going to a breeder?</h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="3A" autocomplete="off" value="1"><span
+                            style="padding: 20pt; font-size: 15pt;">1</span">
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="3B" autocomplete="off" value="2"><span
+                            style="padding: 20pt; font-size: 15pt;">2</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="3C" autocomplete="off" value="3"><span
+                            style="padding: 20pt; font-size: 15pt;">3</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="3D" autocomplete="off" value="4"><span
+                            style="padding: 20pt; font-size: 15pt;">4</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="3E" autocomplete="off" value="5"><span
+                            style="padding: 20pt; font-size: 15pt;">5</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- QUESTION FOUR -->
+        <div class="card mb-4">
+            <div class="card-header text-center">
+                <h3>You are very much the outgoing and adventurous type?</h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="4A" autocomplete="off" value="1"><span
+                            style="padding: 20pt; font-size: 15pt;">1</span">
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="4B" autocomplete="off" value="2"><span
+                            style="padding: 20pt; font-size: 15pt;">2</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="4C" autocomplete="off" value="3"><span
+                            style="padding: 20pt; font-size: 15pt;">3</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="4D" autocomplete="off" value="4"><span
+                            style="padding: 20pt; font-size: 15pt;">4</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="4E" autocomplete="off" value="5"><span
+                            style="padding: 20pt; font-size: 15pt;">5</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- QUESTION FIVE-->
+        <div class="card mb-4">
+            <div class="card-header text-center">
+                <h3>?</h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="5A" autocomplete="off" value="1"><span
+                            style="padding: 20pt; font-size: 15pt;">1</span">
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="5B" autocomplete="off" value="2"><span
+                            style="padding: 20pt; font-size: 15pt;">2</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="5C" autocomplete="off" value="3"><span
+                            style="padding: 20pt; font-size: 15pt;">3</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="5D" autocomplete="off" value="4"><span
+                            style="padding: 20pt; font-size: 15pt;">4</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="5E" autocomplete="off" value="5"><span
+                            style="padding: 20pt; font-size: 15pt;">5</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- QUESTION SIX-->
+        <div class="card mb-4">
+            <div class="card-header text-center">
+                <h3>Having children is apart of your future aspirations? Or you already have children?</h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="6A" autocomplete="off" value="1"><span
+                            style="padding: 20pt; font-size: 15pt;">1</span">
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="6B" autocomplete="off" value="2"><span
+                            style="padding: 20pt; font-size: 15pt;">2</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="6C" autocomplete="off" value="3"><span
+                            style="padding: 20pt; font-size: 15pt;">3</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="6D" autocomplete="off" value="4"><span
+                            style="padding: 20pt; font-size: 15pt;">4</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="6E" autocomplete="off" value="5"><span
+                            style="padding: 20pt; font-size: 15pt;">5</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- QUESTION SEVEN-->
+        <div class="card mb-4">
+            <div class="card-header text-center">
+                <h3>Having children is apart of your future aspirations? Or you already have children?</h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="7A" autocomplete="off" value="1"><span
+                            style="padding: 20pt; font-size: 15pt;">1</span">
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="7B" autocomplete="off" value="2"><span
+                            style="padding: 20pt; font-size: 15pt;">2</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="7C" autocomplete="off" value="3"><span
+                            style="padding: 20pt; font-size: 15pt;">3</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="7D" autocomplete="off" value="4"><span
+                            style="padding: 20pt; font-size: 15pt;">4</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="7E" autocomplete="off" value="5"><span
+                            style="padding: 20pt; font-size: 15pt;">5</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- QUESTION EIGHT-->
+        <div class="card mb-4">
+            <div class="card-header text-center">
+                <h3>Having children is apart of your future aspirations? Or you already have children?</h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="8A" autocomplete="off" value="1"><span
+                            style="padding: 20pt; font-size: 15pt;">1</span">
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="8B" autocomplete="off" value="2"><span
+                            style="padding: 20pt; font-size: 15pt;">2</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="8C" autocomplete="off" value="3"><span
+                            style="padding: 20pt; font-size: 15pt;">3</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="8D" autocomplete="off" value="4"><span
+                            style="padding: 20pt; font-size: 15pt;">4</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="8E" autocomplete="off" value="5"><span
+                            style="padding: 20pt; font-size: 15pt;">5</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- QUESTION NINE-->
+        <div class="card mb-4">
+            <div class="card-header text-center">
+                <h3>Having children is apart of your future aspirations? Or you already have children?</h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="9A" autocomplete="off" value="1"><span
+                            style="padding: 20pt; font-size: 15pt;">1</span">
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="9B" autocomplete="off" value="2"><span
+                            style="padding: 20pt; font-size: 15pt;">2</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="9C" autocomplete="off" value="3"><span
+                            style="padding: 20pt; font-size: 15pt;">3</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="9D" autocomplete="off" value="4"><span
+                            style="padding: 20pt; font-size: 15pt;">4</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="9E" autocomplete="off" value="5"><span
+                            style="padding: 20pt; font-size: 15pt;">5</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- QUESTION TEN-->
+        <div class="card mb-4">
+            <div class="card-header text-center">
+                <h3>Having children is apart of your future aspirations? Or you already have children?</h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="10A" autocomplete="off" value="1"><span
+                            style="padding: 20pt; font-size: 15pt;">1</span">
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="10B" autocomplete="off" value="2"><span
+                            style="padding: 20pt; font-size: 15pt;">2</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="10C" autocomplete="off" value="3"><span
+                            style="padding: 20pt; font-size: 15pt;">3</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="10D" autocomplete="off" value="4"><span
+                            style="padding: 20pt; font-size: 15pt;">4</span>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="10E" autocomplete="off" value="5"><span
+                            style="padding: 20pt; font-size: 15pt;">5</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUBMIT BUTTON -->
+        <button type="button" class="btn btn-primary btn-lg btn-block" id="submit">Find Your Match</button>
+    </form>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+<script>
+
+$("#submit").on("click", function(event) {
+    event.preventDefault();
+    var inputs = $("#new-friend:input[type=radio]:checked");
+    var scoreArray = [];
+    inputs.each(function(){
+        var x = inputs.val();
+        var y = inputs.attr(id);
+        console.log(x,y);
+        scoreArray.push(x,y)
+    })
+    console.log(scoreArray);
+
+    //new user
+    var newFriend = {
+        name: $('#user-name').val().trim(),
+        photo: $('#user-image').val().trim(),
+        scores: scoreArray
+    };
+
+    console.log(newFriend);
+
+});
+
+</script>
+
+</html>
