@@ -11,7 +11,6 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery.js"></script>
 
     <style>
         body {
@@ -57,7 +56,7 @@
             <!-- QUESTION ONE-->
             <div class="card mb-4">
                 <div class="card-header text-center">
-                    <h3>Having children is apart of your future aspirations? Or you already have children?</h3>
+                    <h3>Would you cut off a zombie's head to save your enemies life?</h3>
                 </div>
                 <div class="card-body text-center">
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -89,7 +88,8 @@
             <!-- QUESTION TWO-->
             <div class="card mb-4">
                 <div class="card-header text-center">
-                    <h3>Netflix, pizza, and your dog is more your speed than bar hopping?</h3>
+                    <h3>Would you be able to shoot your family members if they were going to or already were a zombie?
+                    </h3>
                 </div>
                 <div class="card-body text-center">
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -121,7 +121,7 @@
             <!-- QUESTION THREE -->
             <div class="card mb-4">
                 <div class="card-header text-center">
-                    <h3>You support adopting pets from shelters versus going to a breeder?</h3>
+                    <h3>Would you be able to survive being alone?</h3>
                 </div>
                 <div class="card-body text-center">
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -153,7 +153,7 @@
             <!-- QUESTION FOUR -->
             <div class="card mb-4">
                 <div class="card-header text-center">
-                    <h3>You are very much the outgoing and adventurous type?</h3>
+                    <h3>Would you be able to eat bugs?</h3>
                 </div>
                 <div class="card-body text-center">
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -185,7 +185,7 @@
             <!-- QUESTION FIVE-->
             <div class="card mb-4">
                 <div class="card-header text-center">
-                    <h3>You prefer the the nastalgia of your childhood in comparision to the technological age children are growing up in now?</h3>
+                    <h3>Would you be able to talk your own life to escapse becoming a zombie?</h3>
                 </div>
                 <div class="card-body text-center">
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -217,7 +217,7 @@
             <!-- QUESTION SIX-->
             <div class="card mb-4">
                 <div class="card-header text-center">
-                    <h3>You enjoy traveling, the outdoors, and exploring new places?</h3>
+                    <h3>Zombies have surrounded you, how likely are you able to survive?</h3>
                 </div>
                 <div class="card-body text-center">
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -249,7 +249,7 @@
             <!-- QUESTION SEVEN-->
             <div class="card mb-4">
                 <div class="card-header text-center">
-                    <h3>You enjoy neat and tidy organization in your life?</h3>
+                    <h3>Death is inevitable in a zombie apocalypse?</h3>
                 </div>
                 <div class="card-body text-center">
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -281,7 +281,7 @@
             <!-- QUESTION EIGHT-->
             <div class="card mb-4">
                 <div class="card-header text-center">
-                    <h3>You are a ravenous zombie without your coffee in the morning?</h3>
+                    <h3>Will you be able to shoot a zombie in the head?</h3>
                 </div>
                 <div class="card-body text-center">
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -313,7 +313,7 @@
             <!-- QUESTION NINE-->
             <div class="card mb-4">
                 <div class="card-header text-center">
-                    <h3>You're a night owl versus being an early bird?</h3>
+                    <h3>Chance of surviving a zombie apocalypse?</h3>
                 </div>
                 <div class="card-body text-center">
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -345,7 +345,7 @@
             <!-- QUESTION TEN-->
             <div class="card mb-4">
                 <div class="card-header text-center">
-                    <h3>Golf is boring to watch?</h3>
+                    <h3>Chance of becoming a zombie?</h3>
                 </div>
                 <div class="card-body text-center">
                     <div class="btn-group btn-group-toggle" data-toggle="buttons" id="Q10">
@@ -376,12 +376,36 @@
             <!-- SUBMIT BUTTON -->
             <button type="button" class="btn btn-primary btn-lg btn-block" id="submit">Find Your Match</button>
         </form>
-      
-          <footer class="footer">
-            <div class="container">
-                  <p class="bold"><a href="/api/friends">API Friends Link</a>
+
+        <!-- Modal -->
+        <div id="resultsModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                        <h2 class="modal-title"><strong>Your most compatible friend</strong></h2>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="matchName"></h2>
+                        <img id="matchImg" src="" alt="" height="350" width="300">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" id="closeModal"
+                            data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
             </div>
-          </footer>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <p class="bold"><a href="/api/friends">API Friends Link</a>
+            </div>
+        </footer>
     </div>
 
 
@@ -399,6 +423,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <script>
 
@@ -425,7 +450,7 @@
         //question ten
         var input1 = $(":input[type=radio][name=options1]:checked").val();
 
-        if (($('#user-name').val().trim() !== "") && ($('#user-imafe').val().trim() !== "")) {
+        if (($('#user-name').val().trim() !== "") && ($('#user-image').val().trim() !== "")) {
 
             //new friend variable
             var userData = {
@@ -433,21 +458,33 @@
                 photo: $('#user-image').val().trim(),
                 scores: [input0, input2, input3, input4, input5, input6, input7, input8, input9, input1]
             };
-        
-        console.log(userData);
 
-        $.post("/api/friends", userData, function(data){
-          if(data){
-              alert("sent");
-          }
-          else{
-              alert("not sent");
-          }
-          //Clears input fields
-          $("#user-name").val("");
-          $("#user-image").val("");
-});
+            console.log(userData);
 
+            // AJAX post the data to the friends API.
+            $.post("/api/friends", userData, function (data) {
+                // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                $("#matchName").text(data.name);
+                $('#matchImg').attr("src", data.photo);
+                // Show the modal with the best match
+                $("#resultsModal").modal('toggle');
+                // clear the input fields in the form
+                $("#user-name").val("");
+                $("#user-image").val("");
+            });
+        // } else {
+        //     $(".modal-title").text("Missing required information");
+        //     $(".modal-body").html("<h3>Please complete the form before submitting</h3>");
+        //     $("#resultsModal").modal('toggle');
+        // }
+        return false;
+    });
+    // modal logic
+    $('#closeModal').click(function () {
+        $.get('/', function (req, res) {
+            location.replace(res);
+        })
+    });
 </script>
 
 </html>
