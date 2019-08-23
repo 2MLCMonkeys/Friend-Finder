@@ -8,19 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <!-- JQuery -->
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
 
-    <style>
-        body {
-            background-color: cadetblue;
-        }
-
-        img{
-            max-width: 400px;
-        }
-    </style>
 
     <title>Friend Finder!</title>
 </head>
@@ -32,8 +22,8 @@
             <p class="lead">Please answer questions below to the best of your ability</p>
             <hr class="my-4">
             <p>Scale of 1 to 5, 1 being highly likely and 5 being highly unlikely</p>
-            <a class="btn btn-primary btn-lg" href="/home" role="button">Home</a>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Reset</a>
+            <a class="btn btn-primary btn-lg" href="/home" role="button" id="home-button">Home</a>
+            <a class="btn btn-primary btn-lg" href="#" role="button" id="reset-button">Reset</a>
         </div>
         <form id="new-friend">
             <!--USER INPUTS-->
@@ -188,7 +178,7 @@
             <!-- QUESTION FIVE-->
             <div class="card mb-4">
                 <div class="card-header text-center">
-                    <h3>Would you be able to talk your own life to escapse becoming a zombie?</h3>
+                    <h3>Would you be able to take your own life to escapse becoming a zombie?</h3>
                 </div>
                 <div class="card-body text-center">
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -396,7 +386,8 @@
                         <img id="match-img" src="" alt="match-img">
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" id="modal-button" class="btn btn-secondary"
+                            data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -475,6 +466,10 @@
             });
 
         }
+    });
+
+    $("#modal-button").on("click", function () {
+        location.reload();
     });
 </script>
 

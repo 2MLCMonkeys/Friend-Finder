@@ -1,0 +1,66 @@
+body {
+    background-image: url('/public/images/background-image.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.jumbotron{
+	/* background-image: url('/public/images/zombie-pic1.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+    height: 1200px; */
+    background-color: rgba(0, 0, 0, 0.79);
+    color: darkorange;
+    margin-top: 55px;
+    height: 400px;
+    border-color: darkorange;
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 15px;
+    /* opacity: 0.5;
+    filter: alpha(opacity=50); */
+}
+
+.card{
+    background-color: rgba(0, 0, 0, 0.79);
+    color: darkorange;
+    border-color: darkorange;
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 15px;
+}
+
+p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#menu-button, #home-button, #reset-button{
+    margin: 20px;
+    background-color: black;
+    color: darkorange; 
+    border-color: darkorange;
+}
+
+#submit{
+    background-color: black;
+    color: darkorange; 
+    border-color: darkorange;
+
+}
+
+.btn-primary{
+    background-color: grey;
+    border-color: brown;
+}
+
+a{
+    color:darkgray;
+    text-decoration: none;
+}
+
+#match-img{
+    max-width: 400px;
+}
+
