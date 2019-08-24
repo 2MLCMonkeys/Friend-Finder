@@ -1,6 +1,6 @@
 # Friend-Finder
 
-##Deployed Application
+## Deployed Application
 *https://safe-fortress-99339.herokuapp.com/
 
 ## Description
