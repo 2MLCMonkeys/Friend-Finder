@@ -6,10 +6,6 @@ body {
 }
 
 .jumbotron{
-	/* background-image: url('/public/images/zombie-pic1.jpg');
-	background-size: cover;
-    background-repeat: no-repeat;
-    height: 1200px; */
     background-color: rgba(0, 0, 0, 0.79);
     color: darkorange;
     margin-top: 55px;
@@ -18,11 +14,9 @@ body {
     border-style: outset;
     border-width: 5px;
     border-radius: 15px;
-    /* opacity: 0.5;
-    filter: alpha(opacity=50); */
 }
 
-.card{
+.card, .modal-content{
     background-color: rgba(0, 0, 0, 0.79);
     color: darkorange;
     border-color: darkorange;
@@ -47,12 +41,6 @@ p{
     background-color: black;
     color: darkorange; 
     border-color: darkorange;
-
-}
-
-.btn-primary{
-    background-color: grey;
-    border-color: brown;
 }
 
 a{
