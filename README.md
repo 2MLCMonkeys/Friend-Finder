@@ -1,14 +1,19 @@
 # Friend-Finder
 
+Friend-finder is a created server application using Express in Node.js framework. It uses client input to forward a request to the server and return a most likely match keeping the data of the user input to add to the optional choices. The entire app then is deployed on Heroku.
+
+This paticular version is if there was a zombie apocalyspe, who would be your best partner to team up with and survive the hoards. 
+
 ## Deployed Application
 
 [Friend Finder](https://safe-fortress-99339.herokuapp.com/)
 
-## Description
-
-Friend-finder is a created server application using Express in Node.js framework. It uses client input to forward a request to the server and return a most likely match keeping the data of the user input to add to the optional choices. The entire app then is deployed on Heroku.
-
-This paticular version is if there was a zombie apocalyspe, who would be your best partner to team up with and survive the hoards. 
+## App Incorporation
+- Node.js
+- HTML/CSS
+- Bootstrap
+- JQuery
+- API Routes
 
 ### Modules Used
 - Express
