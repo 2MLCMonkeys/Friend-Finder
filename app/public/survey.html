@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
+    <!-- META TAGS -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="public/css/style.css" />
 
-
+    <!-- SURVEY WELCOME -->
     <title>Friend Finder!</title>
 </head>
 
@@ -33,10 +33,12 @@
                 </div>
                 <div class="card-body text-center">
                     <form>
+                        <!-- NAME INPUT -->
                         <div class="form-group">
                             <label for="formGroupExampleInput">Name: </label>
                             <input type="text" class="form-control" id="user-name" placeholder="Rabid Lamebrains">
                         </div>
+                        <!-- IMAGE OF USER INPUT  -->
                         <div class="form-group">
                             <label for="formGroupExampleInput2">URL link to Selfie</label>
                             <input type="text" class="form-control" id="user-image" placeholder="Picture Link Here">
@@ -370,7 +372,7 @@
             <button type="button" class="btn btn-primary btn-lg btn-block" id="submit">Find Your Match</button>
         </form>
 
-        <!-- Modal -->
+        <!-- MODAL -->
         <div class="modal fade" id="results-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -404,8 +406,8 @@
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <!-- JQUERY - POPPER - BOOTSTRAP JS -->
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -419,30 +421,31 @@
 
     $("#submit").on("click", function (event) {
         event.preventDefault();
-        //question one
+        // QUESTION ONE //
         var input0 = $(":input[type=radio][name=options]:checked").val();
-        //question two
+        // QUESTION TWO //
         var input2 = $(":input[type=radio][name=options2]:checked").val();
-        //question three 
+        // QUESTION THREE //
         var input3 = $(":input[type=radio][name=options3]:checked").val();
-        //question four
+        // QUESTION FOUR //
         var input4 = $(":input[type=radio][name=options4]:checked").val();
-        //question five
+        // QUESTION FIVE //
         var input5 = $(":input[type=radio][name=options5]:checked").val();
-        //question six
+        // QUESTION SIX //
         var input6 = $(":input[type=radio][name=options6]:checked").val();
-        //question seven
+        // QUESTION SEVEN //
         var input7 = $(":input[type=radio][name=options7]:checked").val();
-        //question eight
+        // QUESTION EIGHT //
         var input8 = $(":input[type=radio][name=options8]:checked").val();
-        //question nine
+        // QUESTION NINE //
         var input9 = $(":input[type=radio][name=options9]:checked").val();
-        //question ten
+        // QUESTION TEN //
         var input1 = $(":input[type=radio][name=options1]:checked").val();
 
+        // CHECKS FOR USER NAME VAL AND USER IMAGE VALUE //
         if (($('#user-name').val().trim() !== "") && ($('#user-image').val().trim() !== "")) {
 
-            //new friend variable
+            // NEW FRIEND CREATED BY USER //
             var userData = {
                 name: $('#user-name').val().trim(),
                 photo: $('#user-image').val().trim(),
@@ -451,7 +454,7 @@
 
             console.log(userData);
 
-            // AJAX post the data to the friends API.
+            // AJAX POST THE DATA TO FREINDS API //
             $.post("/api/friends", userData, function (data) {
 
                 console.log("I am the return: ", JSON.stringify(data));
@@ -460,14 +463,14 @@
                 $("#results-modal").modal("toggle");
 
 
-                //CLEAR VALUES
+                // CLEAR VALUES //
                 $("#user-name").val("");
                 $("#user-image").val("");
             });
 
         }
     });
-
+    // RELOAD PAGE //
     $("#modal-button").on("click", function () {
         location.reload();
     });
