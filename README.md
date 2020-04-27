@@ -14,6 +14,7 @@ This paticular version is if there was a zombie apocalyspe, who would be your be
 - Bootstrap
 - JQuery
 - API Routes
+- Heroku
 
 ### Modules Used
 - Express
